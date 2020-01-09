@@ -1,7 +1,7 @@
 //dao/BookDao.js v1
 const mogoose=require('mongoose')
 
-let bookModel=mogoose.model("Book")
+let bookModel=mogoose.model("books")
 function addBook(book,callback) {
   let b=  bookModel.create(book,function (err,newBookDoc) {
         if(!err) callback(newBookDoc.toObject())

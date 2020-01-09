@@ -5,7 +5,7 @@ const assert=require('assert')
 
 describe("测试BookDao",function () {
    before(function () {
-      mongoose.connect('mongodb://localhost/demo02',function (err) {
+      mongoose.connect('mongodb://localhost/mydb',function (err) {
 
       })
    })
